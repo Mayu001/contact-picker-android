@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mayu.contactpicker.MainActivity">
+
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="320sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="91dp"
+        android:ems="10"
+        android:hint="@string/Name"
+        android:inputType="text"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/Phone"
+        android:layout_width="320sp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Name"
+        android:layout_below="@+id/Name"
+        android:layout_marginTop="32dp"
+        android:inputType="phone"
+        android:ems="10"
+        android:hint="@string/Phone"
+        />
+
+    <Button
+        android:id="@+id/PickContactButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Phone"
+        android:layout_below="@+id/Phone"
+        android:layout_marginEnd="104dp"
+        android:layout_marginTop="73dp"
+        android:text="@string/PickContact"
+        android:textColor="@color/colorPrimaryDark" />
+</RelativeLayout>
